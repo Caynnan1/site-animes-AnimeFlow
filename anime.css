@@ -181,6 +181,7 @@ body{
     color: white;
     gap: 10px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 10px;
     background-color: #191919;
     padding: 20px;
 }

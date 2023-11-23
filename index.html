@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>AnimeFlow | Home</title>
 </head>
 <body>
     
     <div class="banner">
-        <img src="/assets/src/imgs/911611.png" alt="">
+        <img id="banner">
     </div>
 
     <div class="nn"></div>
@@ -19,7 +19,7 @@
 
     <header>
         <nav class="navpc">
-            <ul><h1>AnimeFlix</h1></ul>
+            <ul><h1>AnimeFlow</h1></ul>
             <ul>
                 <li><a href="#" class="actived">Home</a></li>
                 <li><a href="#">Movies</a></li>
@@ -37,17 +37,30 @@
             </ul>
         </nav>
 
+        <div class="menu-aberto" id="menu-aberto">
+            <ul>
+                <li><a onclick="fechar()" style="color: red;">(X)</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">TV Show</a></li>
+                <li><a href="#">Video</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
         <nav class="navcell">
             <ul>
-                <h1>AnimeFlix</h1>
+                <h1>AnimeFlow</h1>
             </ul>
             <ul>
-                <div class="perfil">
+                <div class="perfil" onclick="abrir()">
                     <img class="avatar" src="https://cdn.discordapp.com/attachments/1147058048054087782/1176281222301888572/20231120_181930.gif?ex=656e4c41&is=655bd741&hm=40645b4429a1666b7f7a6c33d5adb27a15b0b6c672f9d6efa2adaaf1d0258aa5&" alt="">
-                    <span>Caynnan</span>
                 </div>
             </ul>
         </nav>
+
 
     </header>
 
@@ -55,14 +68,110 @@
         <ul class="dir">
             <span class="btn-ass"><i class='bx bx-play'></i></span>
             <div class="banner-txt">
-                <h1>Black Clover</h1>
-                <span>A história se centra em um jovem chamado Asta, nascido sem poder mágico no reino de Clover (algo inédito), mas com sua ambição, habilidades recém-descobertas e amigos, pretende tornar-se o próximo Rei Mago. Capa do primeiro volume do mangá.</span>
+                <h1 id="banner-name"></h1>
+                <span id="banner-desc"></span>
             </div>
         </ul>
         <ul class="trailer-banner">
-            <iframe src="https://www.youtube.com/embed/ScKdFRBJhyY?si=1jHedCW6XyWL3dJT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe id="banner-trailer" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </ul>
     </div>
 
+
+    <div class="animes-gg">
+        <h1>Em alta</h1>
+        <ul class="animes">
+            <li class="box-an">
+                <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx100388-pMwL9vwAdqxr.jpg" alt="">
+                <span class="nome-anime">Banana Fish</span>
+            </li>
+
+            <li class="box-an">
+                <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx150972-3gNJvsyu7lwP.png" alt="">
+                <span class="nome-anime">Sei Lá</span>
+            </li>
+
+            <li class="box-an">
+                <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx145064-5fa4ZBbW4dqA.jpg" alt="">
+                <span class="nome-anime">Jujutsu Kaisen 2nd Season Dublado</span>
+            </li>
+
+            <li class="box-an">
+                <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx145064-5fa4ZBbW4dqA.jpg" alt="">
+                <span class="nome-anime">Jujutsu Kaisen 2nd Season Dublado</span>
+            </li>
+
+            <li class="box-an">
+                <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx145064-5fa4ZBbW4dqA.jpg" alt="">
+                <span class="nome-anime">Jujutsu Kaisen 2nd Season Dublado</span>
+            </li>
+
+            <li class="box-an">
+                <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx145064-5fa4ZBbW4dqA.jpg" alt="">
+                <span class="nome-anime">Jujutsu Kaisen 2nd Season Dublado</span>
+            </li>
+
+            <li class="box-an">
+                <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx145064-5fa4ZBbW4dqA.jpg" alt="">
+                <span class="nome-anime">Jujutsu Kaisen 2nd Season Dublado</span>
+            </li>
+
+            <li class="box-an">
+                <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx145064-5fa4ZBbW4dqA.jpg" alt="">
+                <span class="nome-anime">Jujutsu Kaisen 2nd Season Dublado</span>
+            </li>
+
+            <li class="box-an">
+                <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx145064-5fa4ZBbW4dqA.jpg" alt="">
+                <span class="nome-anime">Jujutsu Kaisen 2nd Season Dublado</span>
+            </li>
+
+            <li class="box-an">
+                <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx145064-5fa4ZBbW4dqA.jpg" alt="">
+                <span class="nome-anime">Jujutsu Kaisen 2nd Season Dublado</span>
+            </li>
+
+            <li class="box-an">
+                <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx145064-5fa4ZBbW4dqA.jpg" alt="">
+                <span class="nome-anime">Jujutsu Kaisen 2nd Season Dublado</span>
+            </li>
+
+            <i class='bx bxs-chevron-right' id="scrollRight"></i>
+
+        </ul>
+    </div>
+
+    <div class="nveps">
+        <h1>Novos Episódios</h1>
+        <ul class="eps">
+            <li class="box-eps">
+                <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx10378-hBXI8fXMLBOg.png" alt="">
+                <span class="nome-ep">Shinryaku!? Ika Musume Dublado - Episódio 5</span>
+            </li>
+
+            <li class="box-eps">
+                <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx10378-hBXI8fXMLBOg.png" alt="">
+                <span class="nome-ep">Shinryaku!? Ika Musume Dublado - Episódio 5</span>
+            </li>
+
+            <li class="box-eps">
+                <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx10378-hBXI8fXMLBOg.png" alt="">
+                <span class="nome-ep">Shinryaku!? Ika Musume Dublado - Episódio 5</span>
+            </li>
+
+            <li class="box-eps">
+                <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx10378-hBXI8fXMLBOg.png" alt="">
+                <span class="nome-ep">Shinryaku!? Ika Musume Dublado - Episódio 5</span>
+            </li>
+
+        </ul>
+    </div>
+
+    <footer>
+        <span>AnimeFlow não hospeda nenhum arquivo de vídeo, apenas os cataloga.</span>
+    </footer>
+
+<script src="banner.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
